@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,12 @@
   <title>Elijah's Web App Dashboard, Treehouse Project 7</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@100;400&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
   <div class="grid-container">
@@ -48,15 +51,17 @@
         <p class="alert" id="alert"><strong>Alert:</strong> You have unread messages</p>
         <p class="alert-close">x</p>
       </div>
-    <!--Data Sets-->
+      <!--Data Sets-->
       <section class="daily-traffic-container data-set">
-        <h5><strong>TRAFFIC</strong></h5>
-        <ul class="traffic-nav">
-          <li class="traffic-nav-link active">Hourly</li>
-          <li class="traffic-nav-link">Daily</li>
-          <li class="traffic-nav-link ">Weekly</li>
-          <li class="traffic-nav-link">Monthly</li>
+        <div class="traffic-header">
+          <h5><strong>TRAFFIC</strong></h5>
+          <ul class="traffic-nav">
+            <li class="traffic-nav-link active">Hourly</li>
+            <li class="traffic-nav-link">Daily</li>
+            <li class="traffic-nav-link ">Weekly</li>
+            <li class="traffic-nav-link">Monthly</li>
           </ul>
+        </div>
         <canvas id="daily-traffic-chart"></canvas>
       </section>
 
@@ -65,7 +70,7 @@
           <h5><strong>DAILY TRAFFIC</strong></h5>
           <canvas id="bar-chart"></canvas>
         </div>
-        
+
         <div class="donut-chart data-set">
           <h5><strong>MOBILE USERS</strong></h5>
           <canvas id="donut-chart"></canvas>
@@ -77,7 +82,7 @@
         <section class="social-container">
           <div class="social">
             <div class="social-image">
-                <img src="svgs/facebook.svg" alt="Facebook icon">
+              <img src="svgs/facebook.svg" alt="Facebook icon">
             </div>
             <div class="social-text">
               <h4>Facebook</h4>
@@ -86,7 +91,7 @@
           </div>
           <div class="social">
             <div class="social-image">
-                <img src="svgs/instagram.svg" alt="Facebook icon">
+              <img src="svgs/instagram.svg" alt="Facebook icon">
             </div>
             <div class="social-text">
               <h4>Instagram</h4>
@@ -95,7 +100,7 @@
           </div>
           <div class="social">
             <div class="social-image">
-                <img src="svgs/twitter.svg" alt="Facebook icon">
+              <img src="svgs/twitter.svg" alt="Facebook icon">
             </div>
             <div class="social-text">
               <h4>Twitter</h4>
@@ -104,87 +109,101 @@
           </div>
         </section>
       </div>
-
-      <section class="members">
-        <h5><strong>NEW MEMBERS</strong></h5>
-        <div class="members-container">
-          <img src="images/member-1.jpg" class="profile-image">
-          <div class="members-text">
-            <p>Victoria Chambers</p>
-            <a href="mailto:victoria.chambers80@example.com">victoria.chambers80@example.com</a>
+      <section class="members-activity-container">
+        <section class="members">
+          <h5><strong>NEW MEMBERS</strong></h5>
+          <div class="members-container">
+            <img src="images/member-1.jpg" class="profile-image">
+            <div class="members-text">
+              <p>Victoria Chambers</p>
+              <a href="mailto:victoria.chambers80@example.com">victoria.chambers80@example.com</a>
+            </div>
+            <p>10/15/20</p>
           </div>
-          <p>10/15/20</p>
-        </div>
-        <div class="members-container">
-          <img src="images/member-2.jpg" class="profile-image">
-          <div class="members-text">
-            <p>Dale Byrd</p>
-            <a href="mailto:dale.byrd@example.com">dale.byrd@example.com</a>
+          <div class="members-container">
+            <img src="images/member-2.jpg" class="profile-image">
+            <div class="members-text">
+              <p>Dale Byrd</p>
+              <a href="mailto:dale.byrd@example.com">dale.byrd@example.com</a>
+            </div>
+            <p>10/15/20</p>
           </div>
-          <p>10/15/20</p>
-        </div>
-        <div class="members-container">
-          <img src="images/member-3.jpg" class="profile-image">
-          <div class="members-text">
-            <p>Dale Byrd</p>
-            <a href="mailto:dawn.wood16@example.com">dawn.wood16@example.com</a>
+          <div class="members-container">
+            <img src="images/member-3.jpg" class="profile-image">
+            <div class="members-text">
+              <p>Dale Byrd</p>
+              <a href="mailto:dawn.wood16@example.com">dawn.wood16@example.com</a>
+            </div>
+            <p>10/15/20</p>
           </div>
-          <p>10/15/20</p>
-        </div>
-        <div class="members-container last-member">
-          <img src="images/member-4.jpg" class="profile-image">
-          <div class="members-text">
-            <p>Dan Oliver</p>
-            <a href="mailto:dan.oliver82@example.com">dan.oliver82@example.com</a>
+          <div class="members-container last-member">
+            <img src="images/member-4.jpg" class="profile-image">
+            <div class="members-text">
+              <p>Dan Oliver</p>
+              <a href="mailto:dan.oliver82@example.com">dan.oliver82@example.com</a>
+            </div>
+            <p>10/15/20</p>
           </div>
-          <p>10/15/20</p>
-        </div>
+        </section>
+        <section class="members">
+          <h5><strong>RECENT ACTIVITY</strong></h5>
+          <div class="members-container">
+            <img src="images/member-1.jpg" class="profile-image">
+            <div class="members-text">
+              <p>Victoria Chambers commented on <strong class="activity">WebApp's SEO Tips</strong></p>
+              <p>4 hours ago</p>
+            </div>
+            <p><span>&gt</span></p>
+          </div>
+          <div class="members-container">
+            <img src="images/member-2.jpg" class="profile-image">
+            <div class="members-text">
+              <p>Dale Byrd liked the post <strong class="activity">Facebook's Changes for 2021</strong></p>
+              <p>5 hours ago</p>
+            </div>
+            <p><span>&gt</span></p>
+          </div>
+          <div class="members-container">
+            <img src="images/member-3.jpg" class="profile-image">
+            <div class="members-text">
+              <p>Dawn Wood commented on <strong class="activity">Facebook's Changes for 2021</strong></p>
+              <p>5 hours ago</p>
+            </div>
+            <p><span>&gt</span></p>
+          </div>
+          <div class="members-container last-member">
+            <img src="images/member-4.jpg" class="profile-image">
+            <div class="members-text">
+              <p>Dale Byrd posted <strong class="activity">Web App's SEO Tips</strong></p>
+              <p>1 day ago</p>
+            </div>
+            <p><span>&gt</span></p>
+          </div>
+        </section>
       </section>
-      <section class="members">
-        <h5><strong>RECENT ACTIVITY</strong></h5>
-        <div class="members-container">
-          <img src="images/member-1.jpg" class="profile-image">
-          <div class="members-text">
-            <p>Victoria Chambers commented on <strong class="activity">WebApp's SEO Tips</strong></p>
-            <p>4 hours ago</p>
-          </div>
-        </div>
-        <div class="members-container">
-          <img src="images/member-2.jpg" class="profile-image">
-          <div class="members-text">
-           <p>Dale Byrd liked the post <strong class="activity">Facebook's Changes for 2021</strong></p>
-           <p>5 hours ago</p>
-          </div>
-        </div>
-        <div class="members-container">
-          <img src="images/member-3.jpg" class="profile-image">
-          <div class="members-text">
-            <p>Dawn Wood commented on <strong class="activity">Facebook's Changes for 2021</strong></p>
-            <p>5 hours ago</p>
-          </div>
-        </div>
-        <div class="members-container last-member">
-          <img src="images/member-4.jpg" class="profile-image">
-          <div class="members-text">
-            <p>Dale Byrd posted <strong class="activity">Web App's SEO Tips</strong></p>
-            <p>1 day ago</p>
-          </div>
-        </div>
-      </section>
-
       <!-- The rest of the html for the project goes here inside of the main element -->
-      <section class="msgUser">
-        <h5><strong>MESSAGE USER</strong></h5>
-        <div class="search-containers">
-          <input class="msg Search" type="text" placeholder="Seach for User">
-          <textarea class="msg Content" placeholder="Message for User" cols="200" rows="7"></textarea><br>
-        </div>
+      <section class="msg-container">
+        <section class="msgUser">
+          <h5><strong>MESSAGE USER</strong></h5>
+          <div class="search-containers">
+            <input class="msg Search" type="text" placeholder="Seach for User">
+            <textarea class="msg Content" placeholder="Message for User" cols="200" rows="7"></textarea><br>
+            <button class="sendMSG" type="button">SEND</button>
+          </div>
+        </section>
+      </section>
+      <section class="settings-container">
+        <h5><strong>SETTINGS</strong></h5>
+      </section>
     </main>
 
   </div>
-  
+
   <!-- JavaScript files for the project go here -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"
+    integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/app.js"></script>
 </body>
+
 </html>
