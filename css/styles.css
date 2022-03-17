@@ -444,19 +444,18 @@ h5 {
 
 @media (min-width: 1024px) {
   .members-activity-container,
-  .msg-container {
+  .msg-settings-container {
     display: flex;
   }
 
   .members,
-  .msgUser,
+  .msg-container,
   .settings-container {
     flex-basis: 50%;
   }
 
-  .members-activity-container > section:last-child{
+  .members-activity-container > section:last-child,
+  .msg-settings-container > section:last-child { 
     border-left: 1px solid #cccccc;
   }
-
-
 }
