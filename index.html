@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@100;400&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="css/toggle-switch.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -195,6 +196,41 @@
         </section>
         <section class="settings-container">
           <h5><strong>SETTINGS</strong></h5>
+              <label class="switch-light switch-ios" style="width: 100px" onclick="">
+                <input type="checkbox">
+              
+                <strong>
+                  Send Email Notifications
+                </strong>
+              
+                <span>
+                  <span>On</span>
+                  <span>Off</span>
+                  <a></a>
+                </span>
+              </label>
+              <label class="switch-light switch-ios" style="width: 100px" onclick="">
+                <input type="checkbox">
+              
+                <strong>
+                  Set Profile to Public
+                </strong>
+              
+                <span>
+                  <span>On</span>
+                  <span>Off</span>
+                  <a></a>
+                </span>
+              </label>
+              <select class="form-field" id="timezone">
+                <option disabled selected>Select a Timezone</option>
+                <option>Eastern</option>
+                <option>Western</option>
+              </select>
+              <div class="settings-button">
+                <button class="button-primary" id="save">Save</button>
+                <button class="button-disabled" id="cancel">Cancel</button>
+              </div>
         </section>
       </section>
     </main>

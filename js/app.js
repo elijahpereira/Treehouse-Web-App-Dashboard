@@ -109,3 +109,14 @@ let donutChart = new Chart(donutCanvas, {
   data: donutData,
   options: donutOptions
 });
+
+const alertBanner = document.getElementsByClassName("alert-container");
+
+alertBanner.innerHTML =
+
+alertBanner.addEventListener('click', e => {
+  const element = e.target;
+  if (element.classList.contains("alert-close")) {
+  alertBanner.style.display = "none"
+  }
+  });
