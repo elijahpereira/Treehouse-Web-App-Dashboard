@@ -134,6 +134,10 @@ header svg:hover {
   top: 5px;
 }
 
+.bell-container SVG:hover{
+  transform: scale(1.5);
+}
+
 .indicator {
   position: absolute;
   display: inline-block;
