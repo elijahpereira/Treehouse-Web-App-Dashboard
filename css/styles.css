@@ -132,10 +132,14 @@ header svg:hover {
   margin-right: 15px;
   position: relative;
   top: 5px;
+  transition-duration: 500ms;
+  transform: scale(1)
 }
 
-.bell-container SVG:hover{
-  transform: scale(1.2 1);
+.bell-container:hover{
+  transition-duration: 500ms;
+  transform: scale(1.2);
+  fill: white;
 }
 
 .indicator {

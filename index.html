@@ -36,15 +36,15 @@
 
     <nav>
       <a href="#top"><img src="svgs/home.svg" alt="Home icon"></a>
-      <a href="#"><img src="svgs/bar-chart.svg" alt="Chart icon"></a>
-      <a href="#"><img src="svgs/members.svg" alt="Members icon"></a>
-      <a href="#"><img src="svgs/settings.svg" alt="Settings icon"></a>
+      <a href="#dash"><img src="svgs/bar-chart.svg" alt="Chart icon"></a>
+      <a href="#members"><img src="svgs/members.svg" alt="Members icon"></a>
+      <a href="#settings"><img src="svgs/settings.svg" alt="Settings icon"></a>
     </nav>
 
     <main>
 
       <div class="dashboard-header">
-        <h4 class="dashboard">Dashboard</h4>
+        <h4 class="dashboard" id="dash">Dashboard</h4>
         <div class="gray-background"></div>
       </div>
 
@@ -112,7 +112,7 @@
       </div>
       <section class="members-activity-container">
         <section class="members">
-          <h5><strong>NEW MEMBERS</strong></h5>
+          <h5 id="members"><strong>NEW MEMBERS</strong></h5>
           <div class="members-container">
             <img src="images/member-1.jpg" class="profile-image">
             <div class="members-text">
@@ -195,7 +195,7 @@
           </section>
         </section>
         <section class="settings-container">
-          <h5><strong>SETTINGS</strong></h5>
+          <h5 id="settings"><strong>SETTINGS</strong></h5>
               <label class="switch-light switch-ios" style="width: 100px" onclick="">
                 <input type="checkbox">
               
