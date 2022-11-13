@@ -110,28 +110,45 @@ let donutChart = new Chart(donutCanvas, {
   options: donutOptions
 });
 
-const alertBanner = document.getElementsByClassName("alert-container")[0];
+//Close Alert Banner
+    const alertBanner = document.getElementsByClassName("alert-container")[0];
 
-alertBanner.addEventListener('click', e => {
-  const element = e.target;
-  if (element.classList.contains("alert-close")) {
-    alertBanner.style.display = "none"
-  }
-});
+    alertBanner.addEventListener('click', e => {
+      const element = e.target;
+      if (element.classList.contains("alert-close")) {
+        alertBanner.style.display = "none"
+      }
+    });
 
-const user = document.querySelector(".msg.Search");
-const message = document.querySelector(".msg.Content");
-const send = document.querySelector(".sendMSG");
+//Message Field Restriction with Empty Fields
+    const user = document.querySelector(".msg.Search");
+    const message = document.querySelector(".msg.Content");
+    const send = document.querySelector(".sendMSG");
 
-send.addEventListener('click', () => {
-  // ensure user and message fields are filled out
-  if (user.value === "" && message.value === "") {
-    alert("Please fill out user and message fields before sending");
-  } else if (user.value === "") {
-    alert("Please fill out user field before sending");
-  } else if (message.value === "") {
-    alert("Please fill out message field before sending");
-  } else {
-    alert(`Message successfully sent to: ${user.value}`);
-  }
-});
+    send.addEventListener('click', () => {
+      // ensure user and message fields are filled out
+      if (user.value === "" && message.value === "") {
+        alert("Please fill out user and message fields before sending");
+      } else if (user.value === "") {
+        alert("Please fill out user field before sending");
+      } else if (message.value === "") {
+        alert("Please fill out message field before sending");
+      } else {
+        alert(`Message successfully sent to: ${user.value}`);
+      }
+    });
+
+//Change Traffic Time Focus
+    document.addEventListener("click", function handleClick(event) {
+      const element= event.target;
+      const target = document.getElementsByClassName("active");
+      console.log(target);
+      //Attempt to remove "active" class from li before adding it to new element
+      // target.classList.remove("traffic-nav-link active");
+        if(element.classList.contains("traffic-nav-link")){
+          const target = document.getElementsByClassName("active");
+          console.log(target);
+          // target.classList.remove("active");
+        event.target.classList.add("active");
+        }
+    });
