@@ -216,11 +216,19 @@ nav a {
   list-style: none;
   display: flex;
   justify-content: center;
+  padding-bottom: 15px;
 }
 
 .traffic-nav li {
   margin: 0px 10px;
-  padding-bottom: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #81c98f;
+  color: #fff;
+  border-radius: 25px;
 }
 
 h5 {
@@ -420,20 +428,16 @@ h5 {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
+    margin-top:10px;
   }
 
   .traffic-nav {
     justify-content: right;
+    padding-bottom: 0px;
   }
 
   .traffic-nav li {
     padding: 8px 10px 10px;
-  }
-
-  .active {
-    background-color: #81c98f;
-    color: #fff;
-    border-radius: 25px;
   }
 
   .bar-donut-container {

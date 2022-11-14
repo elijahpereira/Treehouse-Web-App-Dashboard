@@ -138,15 +138,20 @@ let donutChart = new Chart(donutCanvas, {
       }
     });
 
+//Notifications
+
+  const notifs=document.getElementsByClassName("bell-container")[0];
+  notifs.addEventListener('click', () => {
+    alert("You Have no new Notifications");
+  })
 //Change Traffic Time Focus
     document.addEventListener("click", function handleClick(event) {
       const element= event.target;
-      const target = document.getElementsByClassName("active");
-      console.log(target);
       //Attempt to remove "active" class from li before adding it to new element
-      // target.classList.remove("traffic-nav-link active");
         if(element.classList.contains("traffic-nav-link")){
-          const target = document.getElementsByClassName("active");
+          const target = document.getElementsByClassName("active")[0];
+          console.log(target);
+          target.classList.remove("active");
           console.log(target);
           // target.classList.remove("active");
         event.target.classList.add("active");
